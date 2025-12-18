@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to JSON Converter - Free Online Data Tool | Fast & Secure</title>
+    <meta name="description" content="Convert CSV to JSON online for free. Fast, secure, and private browser-based conversion. Transform comma-separated data into structured JSON objects.">
+    <meta name="keywords" content="csv to json, convert csv to json, csv converter, free json tool, online data converter, browser conversion, developer tools">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="CSV to JSON Converter - Free Online Data Tool">
+    <meta property="og:description" content="Convert CSV data to structured JSON objects instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/csv-to-json.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CSV to JSON Converter",
+      "description": "Free online tool to convert CSV data to JSON format using client-side processing",
+      "url": "https://pngtowebp.github.io/csv-to-json.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "CSV to JSON conversion, Header detection, Client-side processing, Data privacy"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-purple">CSV</span> to <span class="accent-orange">JSON</span> Converter
+                </h1>
+                <p class="tool-subtitle">Transform your tabular CSV data into structured JSON objects. Perfect for web development, API testing, and data configuration.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="csvDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop CSV files here or click to upload</p>
+                            <p class="drop-subtext">Instant Client-Side Conversion</p>
+                            <input type="file" id="csvFileInput" accept=".csv" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files Ready for JSON Generation</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="csvConvertBtn">CONVERT TO JSON</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About CSV to JSON</h2>
+                    <div class="description-content">
+                        <p>CSV files are the standard for exporting data from spreadsheets, but JSON (JavaScript Object Notation) is the preferred format for modern web applications and APIs. Converting your CSV to JSON allows you to easily integrate spreadsheet data into your code or databases.</p>
+                        <p>This tool leverages <strong>Client-Side Rendering (CSR)</strong>. By parsing the file directly in your browser using JavaScript, we ensure your data is never sent to a server. This is the safest way to handle sensitive data, as the transformation is 100% local.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert CSV to JSON</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload:</strong> Drag your .csv files into the upload box or click to select from your device.</li>
+                            <li><strong>Preview:</strong> Your files will appear in a queue. You can add multiple files for batch processing.</li>
+                            <li><strong>Process:</strong> Click "CONVERT TO JSON". The tool will read the first row as keys and subsequent rows as object values.</li>
+                            <li><strong>Download:</strong> Your structured .json files will be generated and saved to your computer instantly.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Does the first row have to be a header?</h3>
+                            <p>Yes. This tool uses the first row of your CSV as the keys for the resulting JSON objects to ensure the data is properly labeled.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is there a limit on file size?</h3>
+                            <p>Since the conversion happens on your device, it depends on your computer's RAM. Most browsers can comfortably handle CSVs with tens of thousands of rows.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Are my files stored on your server?</h3>
+                            <p>No. Your files are processed entirely within your web browser. We do not have a backend that stores or sees your data.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What happens with special characters?</h3>
+                            <p>The tool supports UTF-8 encoding, ensuring that special symbols and international characters are preserved during the conversion.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="script.js"></script>
+    <script src="csv-to-json.js"></script>
+</body>
+</html>
