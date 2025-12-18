@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel to CSV Converter - Free Online Spreadsheet Tool | Fast & Secure</title>
+    <meta name="description" content="Convert Excel (XLSX/XLS) to CSV online for free. Fast, secure, and private spreadsheet conversion directly in your browser. No data leaves your device.">
+    <meta name="keywords" content="excel to csv, xlsx to csv, xls to csv, spreadsheet converter, free excel converter, online csv tool, browser file conversion, data privacy">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Excel to CSV Converter - Free Online Spreadsheet Tool">
+    <meta property="og:description" content="Convert Excel spreadsheets to CSV format instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/excel-to-csv.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Excel to CSV Converter",
+      "description": "Free online tool to convert Excel spreadsheets to CSV format using client-side processing",
+      "url": "https://pngtowebp.github.io/excel-to-csv.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "Excel to CSV conversion, XLSX support, Client-side processing, Data privacy"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-green">EXCEL</span> to <span class="accent-purple">CSV</span> Converter
+                </h1>
+                <p class="tool-subtitle">Transform your Excel workbooks (.xlsx, .xls) into clean CSV files. Fast, free, and processed entirely in your browser for maximum data security.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="excelDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 2v6h6M8 13h8M8 17h8M10 9h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop Excel files here or click to upload</p>
+                            <p class="drop-subtext">Supports .xlsx and .xls (Max 100MB)</p>
+                            <input type="file" id="excelFileInput" accept=".xlsx,.xls" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Spreadsheets Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="excelConvertBtn">CONVERT TO CSV</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About Excel to CSV</h2>
+                    <div class="description-content">
+                        <p>Excel files are rich documents containing formulas, formatting, and multiple sheets. However, for data analysis, database imports, and software compatibility, a simple CSV (Comma-Separated Values) format is often required. CSV files contain raw data in a plain-text format, making them universally readable.</p>
+                        <p>Our converter uses <strong>Client-Side Rendering (CSR)</strong>. By using the SheetJS library, your browser reads the binary spreadsheet data and generates the text-based CSV locally. Your sensitive financial data or contact lists never touch our servers.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert Excel to CSV</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload:</strong> Drag your Excel (.xlsx or .xls) files into the drop zone or click to select them.</li>
+                            <li><strong>Review:</strong> Check your files in the preview list. You can add more files to process them as a batch.</li>
+                            <li><strong>Process:</strong> Click "CONVERT TO CSV". The browser will parse the first sheet of each workbook.</li>
+                            <li><strong>Download:</strong> Your CSV files will be generated and downloaded instantly to your device.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Which Excel sheet will be converted?</h3>
+                            <p>By default, this tool converts the first (active) sheet of your Excel workbook into a CSV file.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is my data secure?</h3>
+                            <p>Yes. The entire conversion process happens in your browser's memory. No spreadsheet data is uploaded to any server or stored anywhere.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Does it support .xls (older Excel)?</h3>
+                            <p>Yes, the tool supports both the modern XML-based .xlsx format and the older binary .xls format.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Will my formulas be preserved?</h3>
+                            <p>CSV is a plain-text format. This tool converts the *results* of your formulas into text values. The formulas themselves are not stored in the CSV.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+    <script src="excel-to-csv.js"></script>
+</body>
+</html>
