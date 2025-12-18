@@ -1080,16 +1080,31 @@ body {
   background-color: var(--color-white);
   border: var(--border-width) solid var(--color-black);
   border-radius: var(--border-radius);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--color-blue) 0%, transparent 70%);
+  opacity: 0.1;
+  animation: pulse 4s ease-in-out infinite;
 }
 
 .tool-page-title {
   font-size: clamp(32px, 6vw, 56px);
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.1;
   margin-bottom: var(--spacing-sm);
+  position: relative;
+  z-index: 1;
   text-transform: uppercase;
   letter-spacing: -1px;
 }
@@ -1097,8 +1112,10 @@ body {
 .tool-subtitle {
   font-size: 18px;
   color: var(--color-gray);
-  font-weight: 600;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
 }
 
 .accent-red {
