@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to JPG Converter - Free Online PDF to Image | Secure & Fast</title>
+    <meta name="description" content="Convert PDF to JPG online for free. Fast, secure, and high-quality PDF to JPG conversion. Transform PDF pages into high-resolution images instantly in your browser.">
+    <meta name="keywords" content="pdf to jpg, convert pdf to jpg, pdf to image, online pdf converter, free pdf converter, jpeg converter, batch pdf conversion">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="PDF to JPG Converter - Free Online PDF to Image">
+    <meta property="og:description" content="Convert PDF pages to JPG images instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/pdf-to-jpg.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PDF to JPG Converter",
+      "description": "Free online tool to convert PDF documents into high-quality JPG images",
+      "url": "https://pngtowebp.github.io/pdf-to-jpg.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "PDF to JPG conversion, Multi-page support, Client-side processing, High resolution output"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-red">PDF</span> to <span class="accent-blue">JPG</span> Converter
+                </h1>
+                <p class="tool-subtitle">Convert your PDF documents into high-quality JPG images. Each page becomes a separate image file. 100% private, processed in your browser.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="pdfDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 15V3M12 3L7 8M12 3L17 8M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p class="drop-text">Drop PDF files here or click to upload</p>
+                            <p class="drop-subtext">Supports multi-page documents</p>
+                            <input type="file" id="pdfFileInput" accept="application/pdf" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="pdfConvertBtn">CONVERT TO JPG</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About PDF to JPG Converter</h2>
+                    <div class="description-content">
+                        <p>Our PDF to JPG converter is a robust tool designed to turn static documents into versatile image formats. While PDFs are excellent for maintaining document layout across platforms, JPGs are often required for easier sharing on social media, embedding in presentations, or using in graphic design projects.</p>
+                        <p>This tool uses <strong>Client-Side Rendering (CSR)</strong>. By leveraging the browser's ability to render PDF data, we eliminate the need to upload your sensitive documents to any external server. Your data stays where it belongs: on your device.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert PDF to JPG</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload:</strong> Drag your PDF file into the drop zone or click to select a file from your file explorer.</li>
+                            <li><strong>Processing:</strong> The tool analyzes the PDF to determine the number of pages. You will see the file listed in the preview area.</li>
+                            <li><strong>Convert:</strong> Hit the "CONVERT TO JPG" button. The browser will begin rendering each page onto a virtual canvas.</li>
+                            <li><strong>Download:</strong> Once a page is rendered, it is automatically saved as a high-resolution JPG image to your computer.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Is there a limit on the number of pages?</h3>
+                            <p>There are no hard limits from our side. However, very large PDFs (100+ pages) may consume significant browser memory during the conversion process.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Will the layout of my PDF be preserved?</h3>
+                            <p>Yes. The converter renders the PDF exactly as it appears in a standard PDF viewer, ensuring fonts, images, and formatting remain identical in the JPG output.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Does this tool work with password-protected PDFs?</h3>
+                            <p>Currently, the tool handles standard PDFs. For password-protected files, you will need to unlock them before conversion.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is the conversion quality high?</h3>
+                            <p>We render pages at a high scale factor to ensure that text remains sharp and readable even in the resulting JPG images.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="script.js"></script>
+    <script src="pdf-to-jpg.js"></script>
+</body>
+</html>
