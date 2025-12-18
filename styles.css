@@ -1074,3 +1074,93 @@ body {
     padding: var(--spacing-sm);
   }
 }
+
+/* Tool Page Styles */
+.tool-header {
+  background-color: var(--color-white);
+  border: var(--border-width) solid var(--color-black);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.tool-page-title {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.tool-subtitle {
+  font-size: 18px;
+  color: var(--color-gray);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.accent-red {
+  color: var(--color-red);
+}
+
+.accent-green {
+  color: var(--color-green);
+}
+
+.accent-purple {
+  color: var(--color-purple);
+}
+
+/* Converter Section */
+.converter-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.drop-subtext {
+  font-size: 14px;
+  color: var(--color-gray);
+  margin-top: var(--spacing-xs);
+}
+
+/* Preview Container */
+.preview-container {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border: var(--border-width) solid var(--color-black);
+  border-radius: var(--border-radius);
+}
+
+.preview-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: var(--spacing-sm);
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background-color: var(--color-cream);
+  border: 2px solid var(--color-gray-light);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.file-item:hover {
+  border-color: var(--color-blue);
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+}
