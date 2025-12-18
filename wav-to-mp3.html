@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAV to MP3 Converter - Free Online Audio Converter | Fast & Secure</title>
+    <meta name="description" content="Convert WAV to MP3 online for free. Fast, secure, and high-quality audio compression directly in your browser. Reduce file size while maintaining audio quality.">
+    <meta name="keywords" content="wav to mp3, convert wav to mp3, audio compressor, free wav converter, mp3 converter, online audio tool, browser audio conversion">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="WAV to MP3 Converter - Free Online Audio Converter">
+    <meta property="og:description" content="Convert WAV audio to MP3 format instantly. Free, fast, and secure client-side audio compression.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/wav-to-mp3.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "WAV to MP3 Converter",
+      "description": "Free online tool to convert WAV audio files to compressed MP3 format",
+      "url": "https://pngtowebp.github.io/wav-to-mp3.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "WAV to MP3 conversion, Client-side compression, High quality bitrate, No file uploads"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-green">WAV</span> to <span class="accent-blue">MP3</span> Converter
+                </h1>
+                <p class="tool-subtitle">Convert large, uncompressed WAV files into high-quality, portable MP3s. Save storage space while keeping your audio sounding great.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="wavDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 19V5l12-2v14M9 18c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zM21 15c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop WAV files here or click to upload</p>
+                            <p class="drop-subtext">Fast local processing, no server uploads</p>
+                            <input type="file" id="wavFileInput" accept="audio/wav,audio/x-wav" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files for Compression</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="wavConvertBtn">CONVERT TO MP3</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About WAV to MP3</h2>
+                    <div class="description-content">
+                        <p>WAV files provide the highest possible audio quality because they are uncompressed, but this comes at the cost of very large file sizes. MP3 uses sophisticated psychoacoustic modeling to remove sounds the human ear can't easily hear, drastically reducing file size (often by 90%) while maintaining excellent clarity.</p>
+                        <p>Our tool runs <strong>Client-Side</strong>. By using the `lamejs` encoder, your browser performs the math required to compress the audio. This ensures your private recordings stay on your computer and never touch a remote server.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert WAV to MP3</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload:</strong> Drag your .wav files into the upload box or select them from your file manager.</li>
+                            <li><strong>Verify:</strong> See your selected files in the preview list. You can batch-process multiple files at once.</li>
+                            <li><strong>Convert:</strong> Click "CONVERT TO MP3". The browser will analyze the audio waveform and encode the MP3.</li>
+                            <li><strong>Download:</strong> Once finished, the compressed MP3 files will be saved to your device automatically.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>How much smaller will my file be?</h3>
+                            <p>Typically, an MP3 file is about 10% the size of the original WAV file. For example, a 50MB WAV file usually becomes a 5MB MP3.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What bitrate is used?</h3>
+                            <p>The tool converts audio at 128kbps, which provides a perfect balance between significant file size reduction and high-quality stereo sound.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can I convert voice recordings?</h3>
+                            <p>Yes. This tool is ideal for converting voice notes, interviews, or podcasts recorded in WAV format to MP3 for easier sharing.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is it safe to use?</h3>
+                            <p>Yes. Since no files are uploaded to our servers, your data is completely secure and private within your own browser session.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.all.min.js"></script>
+    <script src="script.js"></script>
+    <script src="wav-to-mp3.js"></script>
+</body>
+</html>
