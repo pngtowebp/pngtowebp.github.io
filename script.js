@@ -151,16 +151,17 @@ function handleFiles(files) {
   const dropText = dropZone.querySelector(".drop-text")
 
   if (selectedFiles.length > 0) {
-    dropText.textContent = `${selectedFiles.length} file(s) selected`
+    const fileNames = selectedFiles.map((f) => f.name).join(", ")
+    dropText.textContent =
+      selectedFiles.length === 1 ? `Selected: ${fileNames}` : `${selectedFiles.length} files selected`
     dropZone.style.borderColor = "var(--color-green)"
     dropZone.style.backgroundColor = "var(--color-white)"
   }
 }
 
-// Handle conversion (placeholder - actual conversion would require backend)
-function handleConversion() {
+async function handleConversion() {
   if (selectedFiles.length === 0) {
-    alert("Please select files to convert first!")
+    showNotification("Please select files to convert first!", "error")
     return
   }
 
@@ -173,26 +174,155 @@ function handleConversion() {
   convertBtn.disabled = true
   convertBtn.style.backgroundColor = "var(--color-purple)"
 
-  // Simulate conversion process
-  setTimeout(() => {
-    alert(
-      `Conversion to ${outputFormat.toUpperCase()} complete! \n\nNote: This is a demo. Actual file conversion would require backend processing.`,
+  try {
+    // Convert each file
+    for (const file of selectedFiles) {
+      await convertImage(file, outputFormat)
+    }
+
+    showNotification(
+      `Successfully converted ${selectedFiles.length} file(s) to ${outputFormat.toUpperCase()}!`,
+      "success",
     )
 
+    // Reset state
+    resetConverter()
+  } catch (error) {
+    showNotification(`Conversion failed: ${error.message}`, "error")
+  } finally {
     // Reset button
     convertBtn.textContent = originalText
     convertBtn.disabled = false
     convertBtn.style.backgroundColor = "var(--color-green)"
+  }
+}
 
-    // Reset drop zone
-    const dropZone = document.getElementById("dropZone")
-    const dropText = dropZone.querySelector(".drop-text")
-    dropText.textContent = "Drop files here or click to upload"
-    dropZone.style.borderColor = "var(--color-gray)"
-    dropZone.style.backgroundColor = "var(--color-cream)"
+async function convertImage(file, outputFormat) {
+  return new Promise((resolve, reject) => {
+    // Check if file is an image
+    if (!file.type.startsWith("image/")) {
+      reject(new Error(`${file.name} is not an image file`))
+      return
+    }
 
-    selectedFiles = []
-  }, 2000)
+    const reader = new FileReader()
+
+    reader.onload = (e) => {
+      const img = new Image()
+
+      img.onload = () => {
+        try {
+          // Create canvas
+          const canvas = document.createElement("canvas")
+          canvas.width = img.width
+          canvas.height = img.height
+
+          const ctx = canvas.getContext("2d")
+          ctx.drawImage(img, 0, 0)
+
+          // Convert to desired format
+          const mimeType = getMimeType(outputFormat)
+          const quality = outputFormat === "webp" || outputFormat === "jpg" ? 0.92 : 1
+
+          canvas.toBlob(
+            (blob) => {
+              if (!blob) {
+                reject(new Error("Failed to convert image"))
+                return
+              }
+
+              // Download the converted file
+              const originalName = file.name.substring(0, file.name.lastIndexOf(".")) || file.name
+              const newFileName = `${originalName}.${outputFormat}`
+
+              const url = URL.createObjectURL(blob)
+              const a = document.createElement("a")
+              a.href = url
+              a.download = newFileName
+              document.body.appendChild(a)
+              a.click()
+              document.body.removeChild(a)
+              URL.revokeObjectURL(url)
+
+              resolve()
+            },
+            mimeType,
+            quality,
+          )
+        } catch (error) {
+          reject(error)
+        }
+      }
+
+      img.onerror = () => {
+        reject(new Error(`Failed to load image: ${file.name}`))
+      }
+
+      img.src = e.target.result
+    }
+
+    reader.onerror = () => {
+      reject(new Error(`Failed to read file: ${file.name}`))
+    }
+
+    reader.readAsDataURL(file)
+  })
+}
+
+function getMimeType(format) {
+  const mimeTypes = {
+    png: "image/png",
+    jpg: "image/jpeg",
+    jpeg: "image/jpeg",
+    webp: "image/webp",
+    gif: "image/gif",
+    bmp: "image/bmp",
+  }
+  return mimeTypes[format.toLowerCase()] || "image/png"
+}
+
+function showNotification(message, type = "info") {
+  // Remove existing notifications
+  const existing = document.querySelector(".notification")
+  if (existing) {
+    existing.remove()
+  }
+
+  // Create notification element
+  const notification = document.createElement("div")
+  notification.className = `notification notification-${type}`
+  notification.textContent = message
+
+  document.body.appendChild(notification)
+
+  // Trigger animation
+  setTimeout(() => {
+    notification.classList.add("show")
+  }, 10)
+
+  // Remove after 4 seconds
+  setTimeout(() => {
+    notification.classList.remove("show")
+    setTimeout(() => {
+      notification.remove()
+    }, 300)
+  }, 4000)
+}
+
+function resetConverter() {
+  const dropZone = document.getElementById("dropZone")
+  const dropText = dropZone.querySelector(".drop-text")
+  const fileInput = document.getElementById("fileInput")
+
+  dropText.textContent = "Drop files here or click to upload"
+  dropZone.style.borderColor = "var(--color-gray)"
+  dropZone.style.backgroundColor = "var(--color-cream)"
+
+  if (fileInput) {
+    fileInput.value = ""
+  }
+
+  selectedFiles = []
 }
 
 // Track page views (placeholder for analytics)
@@ -224,5 +354,5 @@ window.addEventListener("scroll", () => {
 // Performance monitoring
 window.addEventListener("load", () => {
   const loadTime = performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart
-  console.log("[v0] Page load time:", loadTime + "ms")
+  console.log("Page load time:", loadTime + "ms")
 })
