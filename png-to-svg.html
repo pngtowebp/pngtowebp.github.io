@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG to SVG Converter - Free Online Vector Converter | Fast & Secure</title>
+    <meta name="description" content="Convert PNG to SVG online for free. Fast, secure, and high-quality PNG to SVG conversion. Transform your raster images into scalable vector graphics instantly in your browser.">
+    <meta name="keywords" content="png to svg, convert png to svg, online image converter, free png converter, svg converter, batch png conversion, vectorization">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="PNG to SVG Converter - Free Online Vector Converter">
+    <meta property="og:description" content="Convert PNG images to SVG format instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/png-to-svg.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PNG to SVG Converter",
+      "description": "Free online PNG to SVG converter for creating scalable vector graphics",
+      "url": "https://pngtowebp.github.io/png-to-svg.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "PNG to SVG conversion, Client-side processing, High quality output, Batch support"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-blue">PNG</span> to <span class="accent-purple">SVG</span> Converter
+                </h1>
+                <p class="tool-subtitle">Convert your PNG images into Scalable Vector Graphics (SVG). Perfect for logos, icons, and web designs that need to scale without pixelation.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="pngDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 15V3M12 3L7 8M12 3L17 8M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p class="drop-text">Drop PNG files here or click to upload</p>
+                            <p class="drop-subtext">Batch conversion supported</p>
+                            <input type="file" id="pngFileInput" accept="image/png" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="pngConvertBtn">CONVERT TO SVG</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">OTHER TOOLS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About PNG to SVG</h2>
+                    <div class="description-content">
+                        <p>Our PNG to SVG converter is a powerful client-side tool designed to bridge the gap between raster and vector graphics. SVG (Scalable Vector Graphics) is an XML-based image format that allows images to scale infinitely without losing quality. By converting your PNGs to SVG, you ensure they look sharp on everything from high-resolution retina displays to large format prints.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert PNG to SVG</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload:</strong> Click the drop zone or drag and drop your PNG files directly into the converter.</li>
+                            <li><strong>Preview:</strong> View your selected files in the list. You can remove any unwanted files before processing.</li>
+                            <li><strong>Convert:</strong> Click the "CONVERT TO SVG" button. The tool will process each file individually.</li>
+                            <li><strong>Download:</strong> Your browser will automatically trigger the download for your new SVG files.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Is this PNG to SVG converter free?</h3>
+                            <p>Yes! Our tool is 100% free to use with no limits on the number of files you can convert.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is my data safe?</h3>
+                            <p>Absolutely. Because this is a Client-Side Rendered (CSR) tool, your images are processed locally in your browser. They are never uploaded to our servers, ensuring your privacy.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can I convert multiple PNGs at once?</h3>
+                            <p>Yes, our converter supports batch processing. Simply select multiple files or drag them all at once into the upload area.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Does the SVG output maintain transparency?</h3>
+                            <p>Yes, the converter preserves the alpha channel (transparency) from your original PNG image in the final SVG output.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="script.js"></script>
+    <script src="png-to-svg.js"></script>
+</body>
+</html>
