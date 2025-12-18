@@ -1025,3 +1025,52 @@ body {
     opacity: 1;
   }
 }
+
+/* Adding notification toast styles for conversion feedback */
+.notification {
+  position: fixed;
+  top: 100px;
+  right: -400px;
+  background-color: var(--color-white);
+  border: var(--border-width) solid var(--color-black);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  min-width: 300px;
+  max-width: 400px;
+  font-weight: 700;
+  font-size: 16px;
+  z-index: 9999;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+}
+
+.notification.show {
+  right: var(--spacing-md);
+}
+
+.notification-success {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.notification-error {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.notification-info {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+@media (max-width: 480px) {
+  .notification {
+    min-width: 250px;
+    max-width: calc(100vw - 32px);
+    font-size: 14px;
+    padding: var(--spacing-sm);
+  }
+}
