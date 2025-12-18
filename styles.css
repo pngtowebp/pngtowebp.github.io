@@ -189,7 +189,7 @@ body {
 .sidebar {
   width: 280px;
   padding: var(--spacing-md);
-  position: fixed;
+  position: sticky;
   top: 100px;
   height: fit-content;
   animation: slideInLeft 0.6s ease;
