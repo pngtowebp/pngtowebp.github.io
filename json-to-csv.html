@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to CSV Converter - Free Online Data Tool | Fast & Secure</title>
+    <meta name="description" content="Convert JSON to CSV online for free. Flatten JSON arrays and objects into clean CSV files directly in your browser. Fast, secure, and private data conversion.">
+    <meta name="keywords" content="json to csv, convert json to csv, json flatter, free json tool, online csv converter, browser data conversion, developer tools, json to spreadsheet">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="JSON to CSV Converter - Free Online Data Tool">
+    <meta property="og:description" content="Convert JSON data to CSV format instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/json-to-csv.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "JSON to CSV Converter",
+      "description": "Free online tool to convert JSON data to CSV format using client-side processing",
+      "url": "https://pngtowebp.github.io/json-to-csv.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "JSON to CSV conversion, Nested JSON flattening, Client-side processing, Data privacy"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-orange">JSON</span> to <span class="accent-purple">CSV</span> Converter
+                </h1>
+                <p class="tool-subtitle">Transform complex JSON data into clean, readable CSV files. Perfect for data analysis, spreadsheets, and database imports.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="jsonDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 7v10c0 1.1.9 2 2 2h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V9m-3 3l3 3 3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop JSON files here or click to upload</p>
+                            <p class="drop-subtext">Processed locally (Privacy Guaranteed)</p>
+                            <input type="file" id="jsonFileInput" accept=".json" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="jsonConvertBtn">CONVERT TO CSV</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About JSON to CSV</h2>
+                    <div class="description-content">
+                        <p>JSON is the standard format for web APIs, but it is often difficult to read or analyze without technical tools. CSV files are universally compatible with Excel, Google Sheets, and data visualization software. Our converter bridges this gap by flattening hierarchical JSON data into a two-dimensional table.</p>
+                        <p>Using <strong>Client-Side Rendering (CSR)</strong>, your browser handles the parsing logic. No data is sent to a server, making this tool ideal for developers and data analysts working with sensitive information or large datasets.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert JSON to CSV</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload JSON:</strong> Drag your .json files into the tool or click to browse.</li>
+                            <li><strong>Verify:</strong> Ensure your files appear in the preview list. You can batch-process multiple JSON objects.</li>
+                            <li><strong>Flatten:</strong> Click "CONVERT TO CSV". The tool will identify keys and map them to columns.</li>
+                            <li><strong>Download:</strong> Your CSV file will be generated and downloaded to your device instantly.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Does it handle nested objects?</h3>
+                            <p>Yes. The tool automatically flattens nested JSON objects using dot notation (e.g., <code>user.address.city</code>) to ensure all data is captured in the CSV rows.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is there a limit to the file size?</h3>
+                            <p>The tool can handle large JSON files up to the limit of your browser's RAM (usually several hundred MBs). Processing occurs locally for maximum speed.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What if my JSON is not an array?</h3>
+                            <p>If you upload a single object, the tool will treat it as a one-row CSV. For best results, ensure your JSON is an array of similar objects.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is my data uploaded to any server?</h3>
+                            <p>No. All processing happens on your local machine. We never see or store your JSON data.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="script.js"></script>
+    <script src="json-to-csv.js"></script>
+</body>
+</html>
