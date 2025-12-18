@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF to WebP Converter - Free Online Image Converter | Fast & Secure</title>
+    <meta name="description" content="Convert GIF to WebP online for free. Fast, secure, and high-quality GIF to WebP conversion. Reduce file size while maintaining quality. No registration required.">
+    <meta name="keywords" content="gif to webp, convert gif to webp, online image converter, free gif converter, webp converter, batch gif conversion">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="GIF to WebP Converter - Free Online Image Converter">
+    <meta property="og:description" content="Convert GIF images to WebP format instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/gif-to-webp.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GIF to WebP Converter",
+      "description": "Free online GIF to WebP converter with optimized output size",
+      "url": "https://pngtowebp.github.io/gif-to-webp.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "GIF to WebP conversion, Batch processing, Client-side security, High compression"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-purple">GIF</span> to <span class="accent-green">WebP</span> Converter
+                </h1>
+                <p class="tool-subtitle">Convert your GIF images to WebP format to save up to 30% in file size without losing quality. Processed 100% in your browser.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="gifDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 15V3M12 3L7 8M12 3L17 8M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <p class="drop-text">Drop GIF files here or click to upload</p>
+                            <p class="drop-subtext">Batch conversion supported</p>
+                            <input type="file" id="gifFileInput" accept="image/gif" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="gifConvertBtn">CONVERT TO WEBP</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">OTHER TOOLS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Why Convert GIF to WebP?</h2>
+                    <div class="description-content">
+                        <p>
+                            WebP is a modern image format developed by Google that provides superior lossless and lossy compression for images on the web. By converting your GIFs to WebP, you can significantly reduce file sizes, which leads to faster page load times and reduced bandwidth usage.
+                        </p>
+                        <h3>Benefits of WebP over GIF</h3>
+                        <ul class="feature-list">
+                            <li><strong>Better Compression:</strong> WebP files are typically 25-34% smaller than equivalent GIFs.</li>
+                            <li><strong>Rich Color Support:</strong> WebP supports 24-bit RGB color with an 8-bit alpha channel, compared to GIF's limited 8-bit color palette.</li>
+                            <li><strong>Faster Loading:</strong> Smaller file sizes mean your website or app loads much faster for users.</li>
+                            <li><strong>Browser Support:</strong> WebP is supported by all modern browsers including Chrome, Firefox, Edge, and Safari.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="script.js"></script>
+    <script src="gif-to-webp.js"></script>
+</body>
+</html>
