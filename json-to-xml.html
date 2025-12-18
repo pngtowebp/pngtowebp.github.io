@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to XML Converter - Free Online Data Tool | Fast & Secure</title>
+    <meta name="description" content="Convert JSON to XML online for free. Fast, secure, and private browser-based conversion. Transform JSON objects into structured XML documents instantly.">
+    <meta name="keywords" content="json to xml, convert json to xml, json converter, free xml tool, online data converter, browser conversion, developer tools, json parser">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="JSON to XML Converter - Free Online Data Tool">
+    <meta property="og:description" content="Convert JSON data to structured XML documents instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/json-to-xml.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "JSON to XML Converter",
+      "description": "Free online tool to convert JSON data to XML format using client-side processing",
+      "url": "https://pngtowebp.github.io/json-to-xml.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "JSON to XML conversion, Recursive tag wrapping, Client-side processing, Data privacy"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-orange">JSON</span> to <span class="accent-blue">XML</span> Converter
+                </h1>
+                <p class="tool-subtitle">Wrap your JSON data into well-formed XML structures. A specialized tool for developers working with legacy systems and web services.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="jsonDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 7v10c0 1.1.9 2 2 2h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12l3-3 3 3m-3-3v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop JSON files here or click to upload</p>
+                            <p class="drop-subtext">Private Conversion: Data processed locally</p>
+                            <input type="file" id="jsonFileInput" accept=".json" multiple hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Files Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="jsonConvertBtn">CONVERT TO XML</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About JSON to XML</h2>
+                    <div class="description-content">
+                        <p>While JSON is the modern standard for data, many enterprise systems, SOAP web services, and legacy configurations still require XML. Our JSON to XML converter automates the process of mapping key-value pairs into nested XML nodes, saving you the manual effort of writing complex markup.</p>
+                        <p>By leveraging <strong>Client-Side Rendering (CSR)</strong>, the transformation logic runs entirely within your browser. Your JSON data is parsed and reconstructed into XML locally, ensuring that no sensitive information—like API payloads or database exports—is ever sent over the network.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert JSON to XML</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload JSON:</strong> Drag your .json files into the converter or browse your device.</li>
+                            <li><strong>Validate:</strong> Check the preview list. You can add multiple files to convert them in a single session.</li>
+                            <li><strong>Process:</strong> Click "CONVERT TO XML". The script will create a root node and recursively generate sub-elements.</li>
+                            <li><strong>Download:</strong> Your structured .xml files will be generated and saved instantly.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Does it handle JSON arrays?</h3>
+                            <p>Yes. Arrays are handled by repeating the parent key as separate XML nodes, which is the standard way to represent lists in XML format.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Can I use this for large datasets?</h3>
+                            <p>Absolutely. Since the tool uses your browser's local processing power, it can handle large files as long as your device has sufficient memory.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is my data secure?</h3>
+                            <p>Yes. We do not store or transmit your data. The "conversion" is a local JavaScript operation happening exclusively on your machine.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What is the root element named?</h3>
+                            <p>The tool automatically wraps your data in a generic <code>&lt;root&gt;</code> element to ensure the resulting XML is valid and well-formed.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="script.js"></script>
+    <script src="json-to-xml.js"></script>
+</body>
+</html>
