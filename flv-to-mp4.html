@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLV to MP4 Converter - Free Online Video Tool | Fast & Secure</title>
+    <meta name="description" content="Convert FLV to MP4 online for free. Fast, secure, and private browser-based video conversion. Transform legacy Flash videos into modern MP4 files instantly.">
+    <meta name="keywords" content="flv to mp4, convert flv to mp4, video converter, free flv tool, online video converter, browser conversion, flash video to mp4, local video tool">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="FLV to MP4 Converter - Free Online Video Tool">
+    <meta property="og:description" content="Convert FLV videos to MP4 format instantly. Free, fast, and secure client-side conversion using FFmpeg.wasm.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/flv-to-mp4.html">
+    <meta property="og:image" content="https://pngtowebp.github.io/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FLV to MP4 Converter",
+      "description": "Free online tool to convert FLV videos to MP4 format using client-side WebAssembly processing",
+      "url": "https://pngtowebp.github.io/flv-to-mp4.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "FLV to MP4 conversion, High-quality remuxing, Client-side processing, Data privacy"
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-orange">FLV</span> to <span class="accent-blue">MP4</span> Converter
+                </h1>
+                <p class="tool-subtitle">Convert legacy Flash Video (.flv) files into modern, highly compatible MP4 videos. Processed entirely in your browser for ultimate speed and privacy.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="flvDropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 10l5 5-5 5M4 15h16M15 4l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop FLV video here or click to upload</p>
+                            <p class="drop-subtext">Private Transcoding: Files stay in your browser</p>
+                            <input type="file" id="flvFileInput" accept=".flv" hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Video Ready for Conversion</h3>
+                            <div id="filesList" class="files-list"></div>
+                            <div id="progressContainer" class="progress-bar-wrapper hidden">
+                                <div id="progressBar" class="progress-bar"></div>
+                                <span id="progressText">0%</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="flvConvertBtn">CONVERT TO MP4</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About FLV to MP4</h2>
+                    <div class="description-content">
+                        <p>FLV (Flash Video) was once the standard for web video, but it is no longer supported by modern browsers or mobile devices. MP4 (MPEG-4 Part 14) is the current industry standard, offering excellent compression and universal compatibility. Converting your archive of FLV files to MP4 ensures they remain playable on iPhones, Android devices, and all modern web browsers.</p>
+                        <p>Our tool uses <strong>Client-Side Rendering (CSR)</strong> via FFmpeg.wasm. Unlike traditional converters that require you to upload huge video files to a remote server, we bring the processing power to you. Your video data is transcoded directly in your browser's memory, ensuring your content remains 100% private.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert FLV to MP4</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Upload:</strong> Select your .flv file by dragging it into the zone or using the file picker.</li>
+                            <li><strong>Initialize:</strong> The browser loads the WebAssembly video engine to prepare for conversion.</li>
+                            <li><strong>Transcode:</strong> Click "CONVERT TO MP4". The tool will remux the video stream into an MP4 container.</li>
+                            <li><strong>Save:</strong> Once finished, the high-quality MP4 file will be saved directly to your Downloads folder.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Is there a file size limit?</h3>
+                            <p>The limit is determined by your browser's available memory. For the best experience, we recommend converting files under 500MB.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is the video quality lost?</h3>
+                            <p>Our tool uses smart remuxing technology. If the source video uses compatible codecs (like H.264), we move the data into the new container without re-encoding, resulting in zero quality loss.</p>
+                        </div>
+                        <h3>Are my videos private?</h3>
+                        <p>Yes. Because we use WebAssembly, the conversion happens locally. No video data is ever sent to our servers.</p>
+                        <div class="faq-item">
+                            <h3>Why is it taking a moment to start?</h3>
+                            <p>The first time you use the tool, your browser needs to download the WebAssembly engine (approx. 25MB). Subsequent conversions will be much faster.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+    <script src="script.js"></script>
+    <script src="flv-to-mp4.js"></script>
+</body>
+</html>
