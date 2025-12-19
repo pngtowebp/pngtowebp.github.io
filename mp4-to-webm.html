@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1XNX5XJC3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y1XNX5XJC3');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP4 to WebM Converter - Free Online Video Tool | Fast & Secure</title>
+    <meta name="description" content="Convert MP4 to WebM online for free. Fast, secure, and private browser-based video conversion using FFmpeg.wasm. No file uploads required.">
+    <meta name="keywords" content="mp4 to webm, convert mp4 to webm, video converter, free webm tool, online video tool, ffmpeg wasm, browser video conversion">
+    <meta name="author" content="PNG to WebP Converter">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="MP4 to WebM Converter - Free Online Video Tool">
+    <meta property="og:description" content="Convert MP4 videos to WebM format instantly. Free, fast, and secure client-side conversion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pngtowebp.github.io/mp4-to-webm.html">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MP4 to WebM Converter",
+      "description": "Free online tool to convert MP4 videos to WebM format using client-side WebAssembly processing",
+      "url": "https://pngtowebp.github.io/mp4-to-webm.html",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div class="main-wrapper">
+        <div id="sidebar-container"></div>
+        
+        <main class="main-content">
+            <section class="tool-header">
+                <h1 class="tool-page-title">
+                    <span class="accent-blue">MP4</span> to <span class="accent-green">WebM</span> Converter
+                </h1>
+                <p class="tool-subtitle">Convert your MP4 videos to WebM for better web compatibility and smaller file sizes. Powered by WebAssembly for 100% private local processing.</p>
+            </section>
+
+            <section class="converter-section">
+                <div class="converter-card">
+                    <div class="converter-interface">
+                        <div class="file-drop-zone" id="mp4DropZone">
+                            <svg class="upload-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 10l5 5-5 5M4 14v-4a2 2 0 012-2h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="drop-text">Drop MP4 file here or click to upload</p>
+                            <p class="drop-subtext">Max size depends on your RAM (Recommended < 50MB)</p>
+                            <input type="file" id="mp4FileInput" accept="video/mp4" hidden>
+                        </div>
+                        
+                        <div id="previewContainer" class="preview-container hidden">
+                            <h3 class="preview-title">Video Ready for Transcoding</h3>
+                            <div id="filesList" class="files-list"></div>
+                            <div id="progressWrapper" class="hidden" style="margin-top: 20px;">
+                                <p id="statusText">Loading FFmpeg...</p>
+                                <div class="progress-bar-bg" style="background: #eee; height: 10px; border-radius: 5px; overflow: hidden;">
+                                    <div id="progressBar" style="background: var(--color-green); height: 100%; width: 0%; transition: width 0.3s;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-convert" id="mp4ConvertBtn">CONVERT TO WEBM</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tools-section">
+                <h2 class="section-title">ALL CONVERTERS</h2>
+                <div id="alltools-container"></div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">About MP4 to WebM</h2>
+                    <div class="description-content">
+                        <p>WebM is a modern video format designed specifically for the web. It offers high-quality video playback with significantly smaller file sizes compared to MP4, making it the preferred choice for HTML5 video backgrounds and web-based applications.</p>
+                        <p>Our converter uses <strong>FFmpeg.wasm</strong>, a powerful technology that runs the world's leading video framework directly inside your browser. This means your videos are never uploaded to a server, ensuring 100% privacy and security for your personal or professional media.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">How to Convert MP4 to WebM</h2>
+                    <div class="description-content">
+                        <ol class="how-to-list">
+                            <li><strong>Select Video:</strong> Drag and drop your .mp4 file or click to browse.</li>
+                            <li><strong>Initialize:</strong> The tool will load the FFmpeg engine into your browser's memory.</li>
+                            <li><strong>Transcode:</strong> Click "CONVERT TO WEBM". Your computer's processor will handle the encoding locally.</li>
+                            <li><strong>Download:</strong> Once finished, the .webm file will be automatically saved to your device.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <div class="description-card">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="description-content">
+                        <div class="faq-item">
+                            <h3>Is this as fast as server-side conversion?</h3>
+                            <p>It depends on your computer's CPU. Since it runs in the browser, it might be slightly slower than a high-end server, but it's much faster when you consider there is zero upload/download time for the source file.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Are there file size limits?</h3>
+                            <p>The limit is your browser's available memory (RAM). We recommend converting videos under 50MB for the best experience on this client-side tool.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is my data safe?</h3>
+                            <p>Yes. The video stays in your browser's local sandbox. No data is transmitted to our servers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="footer-container"></div>
+    
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+    <script src="script.js"></script>
+    <script src="mp4-to-webm.js"></script>
+</body>
+</html>
